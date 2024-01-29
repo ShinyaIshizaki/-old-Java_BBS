@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="css/style.css">
+  <title>Anonymous Buletin Board System</title>
+</head>
+<body>
+  <form action="#" method="get" onsubmit="return callJavaScript()">
+    name<input type="text" name="name" id="name">
+    email<input type="email" name="email" id="email">
+    title<input type="text" name="title" id="title">
+    body*<textarea type="textarea" name="body" id="body" required></textarea>
+    <input type="submit" value="Submit">
+  </form>
+
+  <script src="js/client/client.js"></script>
+  <script>
+    function callJavaScript() {
+      console.log("***function callJavaScript() Start***");
+      
+      // bodyが空でなければ、フォームの送信を実行する
+      // const body = document.getElementById("body");
+      // if (body.textContent === "") {
+      //   console.log("body.textContent === \"\"");
+      //   return;
+      // }
+      return true;
+    }
+  </script>
+</body>
+</html>
