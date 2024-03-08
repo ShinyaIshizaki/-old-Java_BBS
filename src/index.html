@@ -7,7 +7,7 @@
   <title>Anonymous Buletin Board System</title>
 </head>
 <body>
-  <form action="#" method="get" onsubmit="return callJavaScript()">
+  <form onsubmit="callJava()">
     name<input type="text" name="name" id="name">
     email<input type="email" name="email" id="email">
     title<input type="text" name="title" id="title">
@@ -16,18 +16,19 @@
   </form>
 
   <script src="js/client/client.js"></script>
-  <script>
+  <!-- <script>
     function callJavaScript() {
       console.log("***function callJavaScript() Start***");
       
       // bodyが空でなければ、フォームの送信を実行する
-      // const body = document.getElementById("body");
-      // if (body.textContent === "") {
-      //   console.log("body.textContent === \"\"");
-      //   return;
-      // }
-      return true;
+      const body = document.getElementById("body");
+      if (body.textContent === "") {
+        console.log("body.textContent === \"\"");
+        return;
+      }
+      // return true;
+      call client.js;
     }
-  </script>
+  </script> -->
 </body>
 </html>

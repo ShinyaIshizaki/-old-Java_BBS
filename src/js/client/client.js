@@ -17,5 +17,5 @@ function callJava() {
   console.log("***function callJava() end***");
 }
 
-console.log("***callJava***");
-callJava;
+// console.log("***callJava***");
+// callJava;
